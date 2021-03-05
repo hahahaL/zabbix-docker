@@ -24,6 +24,7 @@ RUN set -eux && \
     mkdir -p /etc/zabbix/web && \
     mkdir -p /var/lib/php/session && \
     apk add --clean-protected --no-cache \
+            tzdata
             bash \
             curl \
             mariadb-client \
